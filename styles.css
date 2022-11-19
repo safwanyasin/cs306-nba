@@ -1,0 +1,182 @@
+body {
+    background-image: url("https://i.redd.it/gqt2rhp06q051.jpg");
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.page {
+    margin-top: 30px;
+    width: 98vw;
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.box {
+    width: 70%;
+    max-height: 95vh;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+}
+.heading {
+  color: #FDB827;
+  font-weight: 700;
+text-align: center;
+font-size: 28px;
+}
+.headingBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.description {
+color: white;
+font-weight: 700;
+font-size: 20px;
+margin:0;
+padding: 0;
+}
+
+#container {
+/* background-color: #14191d; */
+/* border-radius: 20px; */
+padding: 20px;
+width: 50%;
+overflow: none;
+/* border: 1px solid red; */
+/* From https://css.glass */
+background: rgba(84, 37, 131, 0.75);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+overflow: scroll;
+height: 100%;
+}
+#container::-webkit-scrollbar { 
+display: none;  /* Safari and Chrome */
+}
+.inputField {
+width: inherit;
+height: 40px;
+border-radius: 5px;
+border: 1px solid #FDB827;
+margin: 5px 0px;
+padding-left: 10px;
+background-color: rgba(0, 0, 0, 0);
+color: #FDB827;
+}
+.inputField:focus {
+border: 1px solid #FDB827;
+background-color: rgba(84, 37, 131, 1);
+}
+.inputField::placeholder {
+color: rgba(253, 184, 39, 0.5);
+}
+.mySpan {
+width: 100%;
+display: flex;
+}
+.formatLabel {
+color: white;
+font-size: 10px;
+}
+.submitButton {
+width: 100%;
+height: 40px;
+border-radius: 5px;
+border: none;
+margin: 5px 0px;
+background-color: #FDB827;
+color:rgba(84, 37, 131, 1);
+font-weight: 700;
+}
+.nameSpan {
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+align-content: space-between;
+justify-content: space-between;
+padding: 0px;
+}
+.image {
+/* background-image: url("https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49ed3252c0b2ffb49cf8b508892e452d"); */
+background-image: url("http://m.gettywallpapers.com/wp-content/uploads/2021/12/NBA-Wallpaper-768x1365.jpg");
+background-size: cover;
+width: 50%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content:end;
+/* border: 1px solid red; */
+}
+.formImg {
+    width: 100%;
+    /*
+     border: 1px solid black; */
+}
+.content {
+    /* width: 100%; */
+    padding: 15px;
+    text-align: right;
+}
+.mySpan > label {
+    color: #fdb827;
+    font-weight: 400;
+    font-size: 12px;
+}
+.navbar {
+    /* width: 100vw; */
+    /* height: 30px; */
+    background-color: rgba(84, 37, 131, 1);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+}
+.navbar > p {
+    padding-left: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #FDB827;
+    font-weight: 800;
+}
+.navbar > p:hover {
+    text-decoration: underline;
+}
+
+.table-head {
+    background-color: rgba(84, 37, 131, 1);
+    padding: 10px;
+    margin: 0;
+    color:#FDB827;
+}
+.table-head > th {
+    padding: 10px;
+    margin: 0;
+}
+.all-players{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+}
+.table-container {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+}
