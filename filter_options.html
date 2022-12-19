@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Insert Players</title> 
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        
+    </style>
+    <body>
+        <div class="navbar">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/nba-logo-transparent.png" width="30px" class=""/>
+            <a href="player_insertion.html" class="nav-link">Add Player</a>
+            <a href="showPlayers.php" class="nav-link">Show Players</a>
+            <a href="filter_options.html" class="nav-link">Filter</a>
+        </div>
+        <div class="page">
+            <div class="box">
+                <div class="image">
+                    <div class="content">
+                        <img src="https://cdn.freebiesupply.com/images/large/2x/nba-logo-transparent.png" width="50px" class="nba_logo"/>
+                        <h1 class="description">NBA Player Database</h1>
+                    </div>
+                    
+                    <!-- <img class="formImg" src="form_image.jpg"> -->
+                </div>
+                <div class="form" id="container">
+                    <div>
+                        <h1 class="heading filter-heading">Filter Options</h1>
+                        <p class="filter-description">Fill either of the filter forms and click the relevant filter button to see the results</p>
+                    </div>
+                    <form id="myform" action="teamOrNationalityFilter.php" method="POST">
+                        <span class="mySpan"><label for="idOrNation">Select the field you wish to use to filter</label></span>
+                        <span class="mySpan"><select name="idOrNation" id="idOrNation" class="inputField" required>
+                            <option value="team_id">Team ID</option>
+                            <option value="nationality">Nationality</option>
+                        </select></span>
+                        <!-- <span class="mySpan"><label for="rings_won">Rings Won</label></span> -->
+                        <span class="mySpan"><input type="text" id="filterValue" name="filterValue" placeholder="Enter the Team ID or nationality" class="inputField" required></span>
+                        <!-- <span class="mySpan"><label for="player_rating">Rating</label></span> -->
+                        <input type="submit" class="submitButton" value="Filter"></span>
+                    </form>
+                    <br>
+                    <form id="myform" action="ringsOrRatingFilter.php" method="POST">
+                        <span class="mySpan"><select name="ringsOrRating" id="ringsOrRating" class="inputField" required>
+                            <option value="rings_won">Rings Won</option>
+                            <option value="player_rating">Rating</option>
+                        </select></span>
+                        <span class="mySpan"><select name="greaterOrLess" id="greaterOrLess" class="inputField" required>
+                            <option value="greater">Greater Than</option>
+                            <option value="less">Less Than</option>
+                        </select></span>
+                        <span class="mySpan"><input type="number" id="amount" name="amount" placeholder="Enter an amount" class="inputField" min="0" required></span>
+                        <input type="submit" class="submitButton" value="Filter"></span>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
